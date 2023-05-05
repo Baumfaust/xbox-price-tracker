@@ -5,7 +5,7 @@ This is a simple Python script that scrapes the Xbox consoles page on the Micros
 ## Installation
 Clone the repository:
 ```bash
-git clone https://github.com/baumfaust/xbox-price-tracker.git
+git clone https://github.com/Baumfaust/xbox-price-tracker.git
 ```
 
 Install the required dependencies:
@@ -47,7 +47,7 @@ User=<your username>
 WorkingDirectory=<path to the project directory>
 ExecStart=/usr/bin/python main.py
 Restart=always
-RestartSec=120
+RestartSec=7200
 
 [Install]
 WantedBy=multi-user.target
