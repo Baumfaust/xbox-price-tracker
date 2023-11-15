@@ -47,7 +47,7 @@ for xbox_element in elements:
     xbox_pid= xbox_element.get('data-bi-pid')
     xbox_name = xbox_element.get('data-bi-prdname').strip()
 
-    price_element = xbox_element.find('p', {'class': 'sr-only'})
+    price_element = xbox_element.find('span', {'class': 'font-weight-semibold'})
 
     if xbox_name is not None and price_element is not None:
         xbox_price = int(sub(r'[^\d]', '', price_element.text.strip()))
