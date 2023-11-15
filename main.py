@@ -60,7 +60,7 @@ for xbox_element in elements:
             send_telegram_message(bot_token, chat_id, message)
             logging.info(message)
         else:
-            logging.info(f'Price for {xbox_name} is {xbox_price/100:.2f}')
+            logging.info(f'{xbox_name} => {xbox_price/100:.2f}')
 
         # Insert the new price into the database
         date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
